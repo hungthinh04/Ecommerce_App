@@ -1,19 +1,28 @@
 name: ecommerce_app
 description: "A new Flutter project."
-publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: ^3.5.4
+  sdk: ">=3.0.0 <4.0.0"
 
 dependencies:
   flutter:
     sdk: flutter
+  provider: ^6.1.0         # State management
+  http: ^1.0.0             # REST API requests
+  firebase_auth: ^4.4.0    # Firebase authentication
+  cloud_firestore: ^4.7.0  # Firestore database
+  flutter_bloc: ^8.1.0     # Bloc for state management
+  flutter_stripe: ^9.2.0   # Payment gateway
+  firebase_core: ^2.5.0
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  flutter_lints: ^4.0.0
+  flutter_lints: ^2.0.0
 
 flutter:
   uses-material-design: true
+  assets:
+    - assets/images/      # Add your image folder
+    - assets/fonts/       # Add your font folder
